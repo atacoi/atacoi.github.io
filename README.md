@@ -4,7 +4,7 @@ Here, you'll find a repository dedicated to my personal webpage.
 
 At the moment, the website is a bit barebones, but I'll update it in the future to include more information about myself, as well as some stuff I've made and that piques my interest.
 
-Click on the below link to view my masterpiece... 
+Click on the link below to view my masterpiece... 
 
 <a href="https://atacoi.github.io">Click me!</a>
 
