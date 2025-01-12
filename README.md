@@ -6,7 +6,7 @@ At the moment, the website is a bit barebones, but I'll update it in the future 
 
 Click on the link below to view my masterpiece... 
 
-<a href="https://atacoi.github.io">Click me!</a>
+<a href="https://atacoi.github.io" target="_blank">Click me!</a>
 
 <h1>Updates</h1>
 None at the moment! 
