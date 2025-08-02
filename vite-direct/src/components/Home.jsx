@@ -9,10 +9,7 @@ function Home() {
         lay your eyes upon!
       </p>
       <p>A place for creativity and innovation to shine.</p>
-      <p>
-        I present to you: the personal website of yours truly, Andrew! (whoose
-        last name will not be mentioned)
-      </p>
+      <p>I present to you: the personal website of yours truly, Andrew!</p>
       <p>
         Please, feel free to visit the many subpages using the navigation bar
         above!
