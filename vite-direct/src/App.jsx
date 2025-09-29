@@ -84,22 +84,23 @@ function App() {
         <h2 style={{ margin: "10px 0" }}>Bio</h2>
 
         <div>
-          I'm currently pursing a bachelors in computer science at Stony Brook
-          university.
+          I'm currently pursuing a bachelor's in computer science at Stony Brook
+          University.
         </div>
 
         <div>
-          My interests are web development, cryptography, low-level programming
+          My interests are web development, cryptography, low-level programming,
           and data science.
         </div>
 
         <div>
-          I have experience coding in C, Python, HTML, CSS, JavaScript and Java.{" "}
+          I have experience coding in C, Python, HTML, CSS, JavaScript, and
+          Java.
         </div>
 
         <div>
-          Below are some of the many projects I have worked on during my time as
-          an undergraduate student.
+          Below are some of the many projects I have worked on as an
+          undergraduate.
         </div>
       </div>
       <div
