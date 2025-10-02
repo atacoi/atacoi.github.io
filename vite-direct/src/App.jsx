@@ -12,13 +12,35 @@ import verbs from "./assets/verbs.gif";
 function App() {
   return (
     <div id="App" style={{ marginTop: "27px" }}>
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          gap: "20px",
+          borderBottom: "2px solid black",
+          marginBottom: "20px",
+          padding: "5px",
+          paddingBottom: 0,
+          backgroundColor: "rgb(250, 216, 171)",
+        }}
+      >
+        <a className="navbarItem" href="#bio">
+          Bio
+        </a>
+        <a className="navbarItem" href="#photos">
+          Photos
+        </a>
+        <a className="navbarItem" href="#projects">
+          Projects
+        </a>
+      </div>
       <img
         src={pin}
         style={{
           width: "45px",
           height: "auto",
           position: "absolute",
-          top: "6px",
+          top: "400px",
           zIndex: "2",
         }}
       ></img>
@@ -36,7 +58,7 @@ function App() {
         }}
       ></div>
 
-      <div className="box" style={{ margin: "0 0 0 0" }}>
+      <div className="box" style={{ margin: "0 0 0 0" }} id="name">
         <h1 style={{ margin: "10px 0 5px 0" }}>Andrew Tacoi</h1>
         <div id="socials">
           <a href="https://github.com/atacoi" target="_blank">
@@ -82,7 +104,7 @@ function App() {
         }}
       ></div>
 
-      <div className="box" style={{ marginBottom: "0" }}>
+      <div className="box" style={{ marginBottom: "0" }} id="bio">
         <h2 style={{ margin: "10px 0" }}>Bio</h2>
 
         <div>
@@ -108,7 +130,7 @@ function App() {
         }}
       ></div>
 
-      <div className="box">
+      <div className="box" id="photos">
         <h2>Photos</h2>
         <div style={{ display: "flex", gap: "10px" }}>
           <img src={img}></img>
@@ -128,7 +150,11 @@ function App() {
         }}
       ></div>
 
-      <div className="box" style={{ paddingBottom: 0, marginBottom: "2em" }}>
+      <div
+        className="box"
+        style={{ paddingBottom: 0, marginBottom: "2em" }}
+        id="projects"
+      >
         <h2 style={{ margin: "10px 0" }}>Projects</h2>
         <div id="Projects">
           <Project

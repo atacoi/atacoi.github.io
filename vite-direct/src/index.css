@@ -111,3 +111,13 @@
   width: 100%;
   height: auto;
 }
+
+.navbarItem {
+  text-decoration: none;
+  height: 100%;
+  background-color: rgb(250, 216, 171);
+}
+
+.navbarItem:hover {
+  padding-bottom: 5px;
+}
