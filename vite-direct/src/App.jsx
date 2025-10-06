@@ -18,10 +18,9 @@ function App() {
           alignItems: "center",
           gap: "20px",
           borderBottom: "2px solid black",
-          marginBottom: "20px",
+          marginBottom: "30px",
           padding: "5px",
           paddingBottom: 0,
-          backgroundColor: "rgb(250, 216, 171)",
         }}
       >
         <a className="navbarItem" href="#bio">
@@ -40,7 +39,7 @@ function App() {
           width: "45px",
           height: "auto",
           position: "absolute",
-          top: "400px",
+          top: "66px",
           zIndex: "2",
         }}
       ></img>
@@ -156,7 +155,7 @@ function App() {
         id="projects"
       >
         <h2 style={{ margin: "10px 0" }}>Projects</h2>
-        <div id="Projects">
+        <div className="projects">
           <Project
             name="Phreddit"
             imgSrc={phreddit}
@@ -168,10 +167,11 @@ function App() {
             href={"https://conjugator-sedd.onrender.com"}
             des="Website dedicated for practicing Romanian grammar with over 900+ verbs available to practice.
 Served using Render.com and Mongo Atlas."
+            style={{ height: "500px" }}
           />
         </div>
 
-        <div id="Projects">
+        <div className="projects">
           <Project
             name="Simple Ray Caster"
             imgSrc={walk}
