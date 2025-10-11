@@ -1,8 +1,13 @@
-export default function Project({ name, des, imgSrc, href }) {
+export default function Project({ name, skills, des, imgSrc, href }) {
   return (
     <a className="project" href={href} target="_blank">
-      <div>{name}</div>
-      <img src={imgSrc}></img>
+      <div style={{ fontSize: "larger" }}>{name}</div>
+      <div style={{ display: "flex", gap: "20px", justifyContent: "center" }}>
+        {skills.map((s) => (
+          <img className="project-skill" key={Math.random()} src={s} />
+        ))}
+      </div>
+      <img className="project-image" src={imgSrc}></img>
       <div className="description">{des}</div>
     </a>
   );

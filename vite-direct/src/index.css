@@ -62,14 +62,10 @@ body {
 }
 
 .projects {
-  margin-top: 20px;
   display: flex;
   width: 100%;
   margin: 0 50px;
-  justify-content: center;
   gap: 2em;
-  align-items: stretch;
-  height: 100%;
 }
 
 .projects {
@@ -80,13 +76,10 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  text-align: center;
   gap: 1em;
   text-decoration: none;
   padding: 20px 10px;
-  align-self: stretch;
 }
-
 .project:hover,
 .project:hover * {
   background-color: bisque;
@@ -100,7 +93,7 @@ body {
 }
 
 .project .description {
-  font-size: small;
+  font-size: medium;
 }
 
 #socials {
@@ -115,7 +108,7 @@ body {
   width: 30px;
 }
 
-.project img {
+.project .project-image {
   border-top: 2px solid rgb(255, 255, 255);
   border-bottom: 2px solid rgb(255, 255, 255);
   padding: 10px 0;
@@ -139,7 +132,7 @@ body {
 }
 
 #skill_container a * {
-  width: 80px;
+  width: 70px;
 }
 
 #skill_container a {
@@ -165,4 +158,9 @@ body {
 .navbarItem:hover {
   padding-bottom: 2.5px;
   transition: padding-bottom 0.5s ease-in-out;
+}
+
+.project .project-skill {
+  width: 50px; /* Sets a fixed width */
+  height: auto; /* Height scales proportionally */
 }

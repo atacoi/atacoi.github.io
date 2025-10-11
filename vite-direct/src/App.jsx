@@ -15,6 +15,7 @@ import MongoDB from "./assets/mongo.png";
 import c from "./assets/c.svg";
 import Java from "./assets/java.png";
 import Skill from "./components/Skill";
+import JS from "./assets/js.png";
 
 function App() {
   return (
@@ -155,10 +156,11 @@ function App() {
             text="Python"
             path="Python_(programming_language)"
           />
-          <Skill img={img} text="React" path="React_(software)" />
-          <Skill img={Java} text="Java" path="Java_(programming_language)" />
-          <Skill img={MongoDB} text="MongoDB" path="mongodb" />
           <Skill img={ts} text="TypeScript" path="TypeScript" />
+          <Skill img={img} text="React" path="React_(software)" />
+          <Skill img={MongoDB} text="MongoDB" path="mongodb" />
+          <Skill img={Java} text="Java" path="Java_(programming_language)" />
+          <Skill img={JS} text="JavaScript" path="JavaScript" />
         </div>
       </div>
       <div
@@ -182,16 +184,18 @@ function App() {
         <h2 style={{ margin: "10px 0" }}>Projects</h2>
         <div className="projects">
           <Project
-            name="Phreddit"
+            name="Fake-Rheddit"
             imgSrc={phreddit}
+            skills={[JS, img, MongoDB]}
             des="A recreation of reddit.com developed for Fundamentals of Software Development (CSE 316). Supports user profile, post, community and comment creation, as well as user login and admin profiles."
           />
           <Project
             name="Romanian Grammar Helper"
             imgSrc={verbs}
+            skills={[ts, img, MongoDB]}
             href={"https://conjugator-sedd.onrender.com"}
             des="Website dedicated for practicing Romanian grammar with over 900+ verbs available to practice.
-Served using Render.com and Mongo Atlas."
+Served using Render.com and Mongo Atlas. Over 5+ different conjugation types supported including present, imperfect, pluperfect, etc. Data scraped from dexonline.ro using the BeautifulSoup library."
             style={{ height: "500px" }}
           />
         </div>
@@ -200,14 +204,16 @@ Served using Render.com and Mongo Atlas."
           <Project
             name="Simple Ray Caster"
             imgSrc={walk}
+            skills={[c]}
             href={"https://github.com/atacoi/Simple-Raycaster"}
-            des="A simple raycaster progam based off ID software's Wolfensetin 3D game engine. Developed in a weekend with full sprite-sheet support and tile mapping."
+            des="A simple raycasting progam based off ID software's Wolfensetin 3D game engine. Developed in a weekend with full sprite-sheet support and tile mapping. Raycasing done through a simple linear interpolation algorithm written in pure C."
           />
           <Project
             name="Numerical System Converter"
             imgSrc={number}
+            skills={[python]}
             href={"https://github.com/atacoi/Number-System-Converter"}
-            des="A program made for my systems class entirely in python using the tkinter toolkit that converts one numerical system into another. Supports binary, octal, decimal and hexadecimal conversions."
+            des="A program created for System Fundamentals I (CSE 220). Designed entirely in python using the tkinter toolkit. Supports binary, octal, decimal and hexadecimal numerical conversions."
           />
         </div>
       </div>
