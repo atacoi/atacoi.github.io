@@ -16,6 +16,7 @@ import c from "./assets/c.svg";
 import Java from "./assets/java.png";
 import Skill from "./components/Skill";
 import JS from "./assets/js.png";
+import Me from "./assets/me.png";
 
 function App() {
   return (
@@ -25,11 +26,12 @@ function App() {
           display: "flex",
           alignItems: "center",
           gap: "20px",
-          borderBottom: "2px solid black",
+          borderBottom: "2px solid brown",
           marginBottom: "30px",
           padding: "5px",
           paddingBottom: 0,
           backgroundColor: "transparent",
+          marginTop: "10px",
         }}
       >
         <a className="navbarItem" href="#about_me">
@@ -48,27 +50,28 @@ function App() {
           width: "45px",
           height: "auto",
           position: "absolute",
-          top: "37px",
+          top: "50px",
           zIndex: "2",
           backgroundColor: "transparent",
         }}
       ></img>
       <div
         style={{
-          border: "2px solid black",
+          border: "2px solid brown",
           width: "45%",
           maxWidth: "500px",
           height: "30px",
           padding: 0,
-          borderTop: "2px solid black",
-          borderBottom: "none",
+          borderBottomWidth: "0",
           zIndex: "1",
           backgroundColor: "transparent",
         }}
       ></div>
 
       <div className="box" style={{ margin: "0 0 0 0" }} id="name">
-        <h1 style={{ margin: "10px 0 5px 0" }}>Andrew Tacoi</h1>
+        <h1 style={{ margin: "10px 0 5px 0", fontSize: "xxx-large" }}>
+          Andrew Tacoi
+        </h1>
         <div id="socials">
           <a href="https://github.com/atacoi" target="_blank">
             <img src={GitHub}></img>
@@ -90,12 +93,12 @@ function App() {
 
       <div
         style={{
-          border: "2px solid black",
+          border: "2px solid brown",
           width: "45%",
           height: "10px",
           padding: 0,
-          borderBottom: "none",
-          borderTop: "none",
+          borderBottomWidth: "0",
+          borderTopWidth: "0",
           backgroundColor: "transparent",
           maxWidth: "500px",
         }}
@@ -103,45 +106,66 @@ function App() {
 
       <div className="box">
         <div>Welcome to my professonal website!</div>
-        <img src={img}></img>
       </div>
 
       <div
         style={{
-          border: "2px solid black",
+          border: "2px solid brown",
+          width: "45%",
+          height: "10px",
+          padding: 0,
+          borderBottomWidth: "0",
+          borderTopWidth: "0",
+          backgroundColor: "transparent",
+          maxWidth: "500px",
+        }}
+      ></div>
+
+      <div className="box">
+        <img style={{ width: "100%", padding: 0 }} src={Me}></img>
+      </div>
+
+      <div
+        style={{
+          border: "2px solid brown",
           width: "45%",
           height: "150px",
           padding: 0,
-          borderBottom: "none",
-          borderTop: "none",
+          borderBottomWidth: "0",
+          borderTopWidth: "0",
           backgroundColor: "transparent",
           maxWidth: "500px",
         }}
       ></div>
 
       <div className="box" style={{ marginBottom: "0" }} id="about_me">
-        <h2 style={{ margin: "10px 0" }}>About Me</h2>
+        <h2 style={{ margin: "10px 0 0 0", paddingBottom: 0 }}>About Me</h2>
 
         <div>
-          Hi, I'm Andrew! I'm currently pursuing a bachelor's in computer
-          science at Stony Brook University. I began my computer science journey
-          in high school with AP Computer Science A. My interests are web
+          Hi, I am Andrew! When I was little, I always wanted to create my own
+          applications and spent most of my time downloading rogue software on
+          my windows 7 home computer (sorry mom). This inspired me to take AP
+          Computer Science A in high school and eventually major in computer
+          science. At the moment, I am currently pursuing a bachelor's in
+          computer science at Stony Brook University. My interests are web
           development, cryptography, low-level programming, and data science. I
-          have experience coding in C, Python, HTML, CSS, JavaScript, and Java.
-          For fun, I enjoy taking walks, playing video games and spending time
-          with my friends and family. Below are some of the many projects I have
-          worked on as an undergraduate. Enjoy!
+          have experience coding in a number of different languages including C,
+          Python, HTML, CSS, JavaScript, and Java. For fun, I enjoy taking
+          walks, playing video games and spending time with my friends and
+          family. At the top of the page, you can find a link to my socials
+          including my GitHub, linkedin, email and leetcode.Below are some of
+          the many projects I have worked on as an undergraduate. Enjoy!
         </div>
       </div>
 
       <div
         style={{
-          border: "2px solid black",
+          border: "2px solid brown",
           width: "45%",
           height: "150px",
           padding: 0,
-          borderBottom: "none",
-          borderTop: "none",
+          borderBottomWidth: "0",
+          borderTopWidth: "0",
           backgroundColor: "transparent",
           maxWidth: "500px",
         }}
@@ -165,12 +189,12 @@ function App() {
       </div>
       <div
         style={{
-          border: "2px solid black",
+          border: "2px solid brown",
           width: "45%",
           height: "150px",
           padding: 0,
-          borderBottom: "none",
-          borderTop: "none",
+          borderBottomWidth: "0",
+          borderTopWidth: "0",
           backgroundColor: "transparent",
           maxWidth: "500px",
         }}
@@ -187,12 +211,12 @@ function App() {
             name="Fake-Reddit"
             imgSrc={phreddit}
             skills={[JS, img, MongoDB]}
-            des="A recreation of reddit.com developed for Fundamentals of Software Development (CSE 316). Supports user profile, post, community and comment creation, as well as user login and admin profiles."
+            des="A recreation of reddit.com developed for Fundamentals of Software Development (CSE 316). Supports user profile, post, community and comment creation. Uses bycrpt to hash and salt user passwords, and supports both user and admin profiles."
           />
           <Project
             name="Romanian Grammar Helper"
             imgSrc={verbs}
-            skills={[ts, img, MongoDB]}
+            skills={[ts, img, MongoDB, python]}
             href={"https://conjugator-sedd.onrender.com"}
             des="Website dedicated for practicing Romanian grammar with over 900+ verbs available to practice.
 Served using Render.com and Mongo Atlas. Over 5+ different conjugation types supported including present, imperfect, pluperfect, etc. Data scraped from dexonline.ro using the BeautifulSoup library."
@@ -206,14 +230,14 @@ Served using Render.com and Mongo Atlas. Over 5+ different conjugation types sup
             imgSrc={walk}
             skills={[c]}
             href={"https://github.com/atacoi/Simple-Raycaster"}
-            des="A simple raycasting progam based off ID software's Wolfensetin 3D game engine. Developed in a weekend with full sprite-sheet support and tile mapping. Raycasing done through a simple linear interpolation algorithm written in pure C."
+            des="A simple raycasting progam based off ID software's Wolfensetin 3D game engine. Developed in a weekend with full sprite-sheet support and tile mapping. Raycasing done through a linear interpolation algorithm written in entirely C."
           />
           <Project
             name="Numerical System Converter"
             imgSrc={number}
             skills={[python]}
             href={"https://github.com/atacoi/Number-System-Converter"}
-            des="A program created for System Fundamentals I (CSE 220). Designed entirely in python using the tkinter toolkit. Supports binary, octal, decimal and hexadecimal numerical conversions."
+            des="A program created for practicing numerical system conversion in System Fundamentals I (CSE 220). Programmed in python using the tkinter toolkit for GUI rendering. Supports binary, octal, decimal and hexadecimal numerical conversions."
           />
         </div>
       </div>
