@@ -69,7 +69,13 @@ function App() {
       ></div>
 
       <div className="box" style={{ margin: "0 0 0 0" }} id="name">
-        <h1 style={{ margin: "10px 0 5px 0", fontSize: "xxx-large" }}>
+        <h1
+          style={{
+            margin: "10px 0 5px 0",
+            fontSize: "xxx-large",
+            paddingBottom: 0,
+          }}
+        >
           Andrew Tacoi
         </h1>
         <div id="socials">
@@ -144,17 +150,17 @@ function App() {
         <div>
           Hi, I am Andrew! When I was little, I always wanted to create my own
           applications and spent most of my time downloading rogue software on
-          my windows 7 home computer (sorry mom). This inspired me to take AP
-          Computer Science A in high school and eventually major in computer
-          science. At the moment, I am currently pursuing a bachelor's in
-          computer science at Stony Brook University. My interests are web
-          development, cryptography, low-level programming, and data science. I
-          have experience coding in a number of different languages including C,
+          my Windows 7 home computer. This inspired me to take AP Computer
+          Science A in high school and eventually major in computer science. At
+          the moment, I am currently pursuing a bachelor's in computer science
+          at Stony Brook University. My interests are web development,
+          cryptography, low-level programming, and data science. I have
+          experience coding in several programming languages, including C,
           Python, HTML, CSS, JavaScript, and Java. For fun, I enjoy taking
           walks, playing video games and spending time with my friends and
-          family. At the top of the page, you can find a link to my socials
-          including my GitHub, linkedin, email and leetcode.Below are some of
-          the many projects I have worked on as an undergraduate. Enjoy!
+          family. At the top of the page, you can find a link to my socials,
+          such as my GitHub, LinkedIn, email and LeetCode. Below are some of the
+          many projects I have worked on as an undergraduate. <br /> Enjoy!
         </div>
       </div>
 
@@ -211,15 +217,15 @@ function App() {
             name="Fake-Reddit"
             imgSrc={phreddit}
             skills={[JS, img, MongoDB]}
-            des="A recreation of reddit.com developed for Fundamentals of Software Development (CSE 316). Supports user profile, post, community and comment creation. Uses bycrpt to hash and salt user passwords, and supports both user and admin profiles."
+            des="A recreation of reddit.com developed for Fundamentals of Software Development (CSE 316). Supports user profile, post, community and comment creation. Uses bcrypt to hash and salt user passwords, and supports both user and admin profiles."
           />
           <Project
             name="Romanian Grammar Helper"
             imgSrc={verbs}
             skills={[ts, img, MongoDB, python]}
             href={"https://conjugator-sedd.onrender.com"}
-            des="Website dedicated for practicing Romanian grammar with over 900+ verbs available to practice.
-Served using Render.com and Mongo Atlas. Over 5+ different conjugation types supported including present, imperfect, pluperfect, etc. Data scraped from dexonline.ro using the BeautifulSoup library."
+            des="Website dedicated to practicing Romanian grammar with over 900+ verbs available to practice.
+Served using Render.com and Mongo Atlas. Over 5+ different conjugation types are supported, including present, imperfect, pluperfect, etc. Data scraped from dexonline.ro using the BeautifulSoup library."
             style={{ height: "500px" }}
           />
         </div>
@@ -230,14 +236,14 @@ Served using Render.com and Mongo Atlas. Over 5+ different conjugation types sup
             imgSrc={walk}
             skills={[c]}
             href={"https://github.com/atacoi/Simple-Raycaster"}
-            des="A simple raycasting progam based off ID software's Wolfensetin 3D game engine. Developed in a weekend with full sprite-sheet support and tile mapping. Raycasing done through a linear interpolation algorithm written in entirely C."
+            des="A simple raycasting program based off ID Software's Wolfenstein 3D game engine. Developed in a weekend with full sprite-sheet support and tile mapping. Raycasting is done through a linear interpolation algorithm written entirely in C."
           />
           <Project
             name="Numerical System Converter"
             imgSrc={number}
             skills={[python]}
             href={"https://github.com/atacoi/Number-System-Converter"}
-            des="A program created for practicing numerical system conversion in System Fundamentals I (CSE 220). Programmed in python using the tkinter toolkit for GUI rendering. Supports binary, octal, decimal and hexadecimal numerical conversions."
+            des="A program created for practicing numerical system conversion in System Fundamentals I (CSE 220). Programmed in Python using the tkinter toolkit for GUI rendering. Supports binary, octal, decimal and hexadecimal numerical conversions."
           />
         </div>
       </div>
