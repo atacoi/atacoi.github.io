@@ -184,7 +184,7 @@ function App() {
         <h2 style={{ margin: "10px 0" }}>Projects</h2>
         <div className="projects">
           <Project
-            name="Fake-Rheddit"
+            name="Fake-Reddit"
             imgSrc={phreddit}
             skills={[JS, img, MongoDB]}
             des="A recreation of reddit.com developed for Fundamentals of Software Development (CSE 316). Supports user profile, post, community and comment creation, as well as user login and admin profiles."
