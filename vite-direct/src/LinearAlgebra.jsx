@@ -25,7 +25,7 @@ export default function LinearAlgebra() {
         <a className="navbarItem" href="/#projects">
           Projects
         </a>
-        <a className="navbarItem" href="/linear-stuff">
+        <a className="navbarItem" href="/#/linear-stuff">
           Linear Algebra Stuff
         </a>
       </div>
