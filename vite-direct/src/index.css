@@ -171,3 +171,93 @@ body {
   width: 50px; /* Sets a fixed width */
   height: auto; /* Height scales proportionally */
 }
+
+.matrix {
+  height: 100%;
+  border-collapse: collapse;
+}
+
+.matrix * {
+  border: none;
+  text-align: center;
+  padding: 5px;
+  margin: 0;
+  width: auto;
+}
+
+.matrix input {
+  width: 30px;
+  min-width: 2ch;
+  font-size: large;
+}
+
+#matrix-reduction {
+  border-top: brown solid 2.5px;
+  border-bottom: brown solid 2.5px;
+  margin: 30px;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+#dimensions-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+#linear-systems-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 10px;
+}
+
+#linear-systems-container div {
+  display: flex;
+  align-items: center;
+}
+
+.matrix-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
+.matrix-wrapper::before,
+.matrix-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0; /* ← key: fills container height */
+  width: 8px;
+}
+
+.matrix-wrapper::before {
+  left: 0;
+  border-left: 2px solid brown;
+  border-top: 2px solid brown;
+  border-bottom: 2px solid brown;
+}
+
+.matrix-wrapper::after {
+  right: 0;
+  border-right: 2px solid brown;
+  border-top: 2px solid brown;
+  border-bottom: 2px solid brown;
+}
+
+#linear-algebra-page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100;
+}
