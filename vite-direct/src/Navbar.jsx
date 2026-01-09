@@ -13,13 +13,13 @@ export default function Navbar() {
         marginTop: "10px",
       }}
     >
-      <a className="navbarItem" href="/#/#about_me">
+      <a className="navbarItem" href="#about_me">
         About Me
       </a>
-      <a className="navbarItem" href="/#/#skills">
+      <a className="navbarItem" href="#skills">
         Skills
       </a>
-      <a className="navbarItem" href="/#/#projects">
+      <a className="navbarItem" href="#projects">
         Projects
       </a>
       <a className="navbarItem" href="/#/linear-stuff">
