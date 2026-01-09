@@ -16,36 +16,12 @@ import c from "./assets/c.svg";
 import Java from "./assets/java.png";
 import Skill from "./components/Skill";
 import JS from "./assets/js.png";
+import Navbar from "./Navbar";
 
 export default function MainPage() {
   return (
     <div id="App">
-      <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          gap: "20px",
-          borderBottom: "2px solid brown",
-          marginBottom: "30px",
-          padding: "5px",
-          paddingBottom: 0,
-          backgroundColor: "transparent",
-          marginTop: "10px",
-        }}
-      >
-        <a className="navbarItem" href="#about_me">
-          About Me
-        </a>
-        <a className="navbarItem" href="#skills">
-          Skills
-        </a>
-        <a className="navbarItem" href="#projects">
-          Projects
-        </a>
-        <a className="navbarItem" href="/#/linear-stuff">
-          Linear Algebra Stuff
-        </a>
-      </div>
+      <Navbar />
       <img
         src={pin}
         style={{
